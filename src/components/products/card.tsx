@@ -19,7 +19,7 @@ const Card = ({ car }: CardProps) => {
   const dispatch = useDispatch();
   const mode = useSelector((state: RootState) => state.nav.mode);
   const isFavorite = useSelector(
-    (state: RootState) => !!state.favorites[car.id]
+    (state: RootState) => !!state.cars.favorites[car.id]
   );
 
   return (

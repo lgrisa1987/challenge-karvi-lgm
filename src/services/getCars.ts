@@ -1,4 +1,4 @@
-import { Filters } from "./../types/filters.types";
+import { Filters } from "@/types/cars.types";
 import { Item } from "@/types/cars.types";
 
 export const getCars = async (): Promise<

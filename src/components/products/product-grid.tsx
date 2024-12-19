@@ -1,11 +1,6 @@
 "use client";
-import { useMemo } from "react";
 import { cn } from "@/lib/utils";
-import { RootState } from "@/state/store";
 import { Item } from "@/types/cars.types";
-import { useSelector } from "react-redux";
-import { useSearchParams } from "next/navigation";
-import useGetAllSearchParams from "@/hooks/useGetAllSearchParams";
 import ResultsCount from "@/components/products/results-count";
 import ToggleModeBtn from "@/components/nav/toggle-mode-btn";
 import Card from "@/components/products/card";

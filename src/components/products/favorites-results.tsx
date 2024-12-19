@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import Arrow from "@/components/ui/icons/arrow";
 
 const FavoriteResults = () => {
-  const favorites = useSelector((state: RootState) => state.favorites);
+  const favorites = useSelector((state: RootState) => state.cars.favorites);
   const favoriteCars = Object.values(favorites);
   return (
     <>
