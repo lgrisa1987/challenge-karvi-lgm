@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --Grey-Grey-200: #ebecf5;
+    --Grey-Grey-350: #e3e5ed;
+    --Grey-Grey-700: #87899c;
+    --Gray-Gray-1000: #1b2141;
+    --Blue-Blue-100: #f2f3f8;
+    --Blue-Blue-500: #b4bef5;
+    --Blue-Blue-800: #566ded;
+    --Blue-Blue-900: #2c3cb3;
+    --Orange-Orange-700: #ff7042;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  html * {
+    @apply text-sm;
+  }
+  * {
+    @apply m-0 font-raleway antialiased lining-nums font-medium;
+  }
+  span,
+  a,
+  p,
+  button {
+    @apply text-Gray-Gray-1000;
+  }
+}
+@layer components {
+  .karvi-link {
+    @apply flex gap-1 hover:underline hover:text-Blue-Blue-800 underline-offset-2;
+  }
+}
